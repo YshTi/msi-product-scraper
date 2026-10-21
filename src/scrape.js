@@ -281,8 +281,6 @@ async function scrapeProduct() {
       timeout: 30000,
     });
 
-    console.log("Product title found!");
-
     const basicInfo = await extractBasicInfo(page);
     const images = await getProductImages(page);
     const categories = await getCategories(page);
